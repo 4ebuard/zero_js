@@ -1,0 +1,19 @@
+img {
+    height: 50px
+}
+
+input {
+    padding: 20px;
+}
+
+.important_item {
+    color: red;
+    font-size: 20px;
+    border: red 1px solid;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.imp_size {
+    font-size: 40px;
+}
