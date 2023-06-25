@@ -18,6 +18,18 @@
     <option value="Moscow">Moscow</option>
 </select>
 </p>
+<p>Hoddies:</p>
+<textarea name="hobbies" cols="30" rows="10" class="hobbies" id="hobbies">
+    Очко Дъявола
+    Смотрит в окно.
+</textarea>
+<p> Avatar:
+<div class="avatar-wrapper" id="avatar-wrapper">
+    <img class="avatar" id="avatar" alt="АВАТАР"
+        src="https://static.wikia.nocookie.net/enanimanga/images/1/14/BokuNoPico.jpg/revision/latest/smart/width/53/height/53?cb=20170831135418">
+</div>
+</p>
+</p>
 <script>
     let firstNameEl;
     let firstNameId;
@@ -30,24 +42,48 @@
     let addressEl;
     let addressId;
     let addressClass;
-    
+
     let cityListEl;
     let cityListId;
     let cityListClass;
+
+    let hobbiesEl;
+    let hobbiesId;
+    let hobbiesClass;
+
+    let avatarWrapperEl;
+    let avatarWrapperId;
+    let avatarWrapperClass;
+
+    let avatarEl;
+    let avatarId;
+    let avatarClass;
 
     firstNameId = 'first-name';
     lastNameId = 'last-name';
     addressId = 'address';
     cityListId = 'city-list';
+    hobbiesId = 'hobbies';
+    avatarWrapperId = 'avatar-wrapper';
+    avatarId = 'avatar';
     firstNameEl = document.getElementById(firstNameId);
     lastNameEl = document.getElementById(lastNameId);
     addressEl = document.getElementById(addressId);
     cityListEl = document.getElementById(cityListId);
-    window.alert(firstNameEl.value);
-    window.alert(lastNameEl.value);
-    window.alert(addressEl.value);
-    window.alert(cityListEl.value);
+    hobbiesEl = document.getElementById(hobbiesId);
+    avatarWrapperEl = document.getElementById(avatarWrapperId);
+    avatarEl = document.getElementById(avatarId);
+    //window.alert(firstNameEl.value);
+    //window.alert(lastNameEl.value);
+    //window.alert(addressEl.value);
+    //window.alert(cityListEl.value);
+    //window.alert(hobbiesEl.value);
+    //window.alert(avatarEl.innerHTML);
+    //window.alert(hobbiesEl.innerHTML);
+    //window.alert(cityListEl.innerHTML);
     //window.alert(firstNameEl.className);
+    window.alert(avatarEl.alt);
+    window.alert(avatarEl.src);
 
 
-</script>
+</script>   
