@@ -1,0 +1,53 @@
+<p>
+<p>First Name:</p>
+<input value="Peter" class="first-name" id="first-name">
+</p>
+<p>
+<p>Last Name:</p>
+<input value="Smolianinov" class="last-name" id="last-name">
+</p>
+<p>
+<p>Address:</p>
+<input value="CityCenter" class="address" id="address">
+</p>
+<p>
+<p>City:</p>
+<select name="City" id="city-list">
+    <option value="Kiev">Kiev</option>
+    <option value="Minsk" selected="selected">Minsk</option>
+    <option value="Moscow">Moscow</option>
+</select>
+</p>
+<script>
+    let firstNameEl;
+    let firstNameId;
+    let firstNameClass;
+
+    let lastNameEl;
+    let lastNameId;
+    let lastNameClass;
+
+    let addressEl;
+    let addressId;
+    let addressClass;
+    
+    let cityListEl;
+    let cityListId;
+    let cityListClass;
+
+    firstNameId = 'first-name';
+    lastNameId = 'last-name';
+    addressId = 'address';
+    cityListId = 'city-list';
+    firstNameEl = document.getElementById(firstNameId);
+    lastNameEl = document.getElementById(lastNameId);
+    addressEl = document.getElementById(addressId);
+    cityListEl = document.getElementById(cityListId);
+    window.alert(firstNameEl.value);
+    window.alert(lastNameEl.value);
+    window.alert(addressEl.value);
+    window.alert(cityListEl.value);
+    //window.alert(firstNameEl.className);
+
+
+</script>
