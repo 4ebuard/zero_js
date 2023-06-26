@@ -1,14 +1,14 @@
 <p>
 <p>First Name:</p>
-<input value="Peter" class="first-name" id="first-name">
+<input value="Peter" title= 'Input you first name' class="first-name default-input" id="first-name">
 </p>
 <p>
-<p>Last Name:</p>
-<input value="Smolianinov" class="last-name" id="last-name">
+<p>Last Name:</p> 
+<input value="Smolianinov" class="last-name default-input" id="last-name">
 </p>
 <p>
 <p>Address:</p>
-<input value="CityCenter" class="address" id="address">
+<input value="CityCenter" class="address default-input" id="address">
 </p>
 <p>
 <p>City:</p>
@@ -39,7 +39,7 @@
     let hobbiesId = 'hobbies';
     let avatarWrapperId = 'avatar-wrapper';
     let avatarId = 'avatar';
-    
+
     let firstNameEl = document.getElementById(firstNameId);
     let lastNameEl = document.getElementById(lastNameId);
     let addressEl = document.getElementById(addressId);
@@ -55,9 +55,27 @@
     //window.alert(avatarEl.innerHTML);
     //window.alert(hobbiesEl.innerHTML);
     //window.alert(cityListEl.innerHTML);
-    //window.alert(firstNameEl.className);
-    window.alert(avatarEl.alt);
-    window.alert(avatarEl.src);
-
-
+    //window.alert(avatarEl.alt);
+    //window.alert(avatarEl.src);
+    firstNameEl.value = 'Pablo';
+    //firstNameEl.className = 'Pablo';
+    lastNameEl.value = 'Pablito';
+    // window.alert(firstNameEl.value);
+    //window.alert(lastNameEl.value);
+    window.alert(lastNameEl.className);
+    lastNameEl.className = 'last-name default-input error-input';
+    avatarEl.src = 'https://static.wikia.nocookie.net/enanimanga/images/f/fe/Sweet_Punishment.jpg/revision/latest/smart/width/53/height/53?cb=20180418073321';
+    avatarEl.title = 'SUPA DUPA AVA';
+    lastNameEl.title = 'Wrong last name'
 </script>
+
+<style>
+    .default-input {
+        border: green 5px solid;
+        padding: 5px;
+    }
+
+    .error-input {
+        border-color: red;
+    }
+</style>
