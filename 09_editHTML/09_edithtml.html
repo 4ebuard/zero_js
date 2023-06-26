@@ -1,0 +1,63 @@
+<p>
+<p>First Name:</p>
+<input value="Peter" class="first-name" id="first-name">
+</p>
+<p>
+<p>Last Name:</p>
+<input value="Smolianinov" class="last-name" id="last-name">
+</p>
+<p>
+<p>Address:</p>
+<input value="CityCenter" class="address" id="address">
+</p>
+<p>
+<p>City:</p>
+<select name="City" id="city-list">
+    <option value="Kiev">Kiev</option>
+    <option value="Minsk" selected="selected">Minsk</option>
+    <option value="Moscow">Moscow</option>
+</select>
+</p>
+<p>Hoddies:</p>
+<textarea name="hobbies" cols="30" rows="10" class="hobbies" id="hobbies">
+    Очко Дъявола
+    Смотрит в окно.
+</textarea>
+<p> Avatar:
+<div class="avatar-wrapper" id="avatar-wrapper">
+    <img class="avatar" id="avatar" alt="АВАТАР"
+        src="https://static.wikia.nocookie.net/enanimanga/images/1/14/BokuNoPico.jpg/revision/latest/smart/width/53/height/53?cb=20170831135418">
+</div>
+</p>
+</p>
+<script>
+
+    let firstNameId = 'first-name';
+    let lastNameId = 'last-name';
+    let addressId = 'address';
+    let cityListId = 'city-list';
+    let hobbiesId = 'hobbies';
+    let avatarWrapperId = 'avatar-wrapper';
+    let avatarId = 'avatar';
+    
+    let firstNameEl = document.getElementById(firstNameId);
+    let lastNameEl = document.getElementById(lastNameId);
+    let addressEl = document.getElementById(addressId);
+    let cityListEl = document.getElementById(cityListId);
+    let hobbiesEl = document.getElementById(hobbiesId);
+    let avatarWrapperEl = document.getElementById(avatarWrapperId);
+    let avatarEl = document.getElementById(avatarId);
+    //window.alert(firstNameEl.value);
+    //window.alert(lastNameEl.value);
+    //window.alert(addressEl.value);
+    //window.alert(cityListEl.value);
+    //window.alert(hobbiesEl.value);
+    //window.alert(avatarEl.innerHTML);
+    //window.alert(hobbiesEl.innerHTML);
+    //window.alert(cityListEl.innerHTML);
+    //window.alert(firstNameEl.className);
+    window.alert(avatarEl.alt);
+    window.alert(avatarEl.src);
+
+
+</script>
