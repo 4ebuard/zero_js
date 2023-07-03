@@ -1,9 +1,9 @@
 <p>
 <p>First Name:</p>
-<input value="Peter" title= 'Input you first name' class="first-name default-input" id="first-name">
+<input value="Peter" title='Input you first name' class="first-name default-input" id="first-name">
 </p>
 <p>
-<p>Last Name:</p> 
+<p>Last Name:</p>
 <input value="Smolianinov" class="last-name default-input" id="last-name">
 </p>
 <p>
@@ -67,6 +67,13 @@
     avatarEl.src = 'https://static.wikia.nocookie.net/enanimanga/images/f/fe/Sweet_Punishment.jpg/revision/latest/smart/width/53/height/53?cb=20180418073321';
     avatarEl.title = 'SUPA DUPA AVA';
     lastNameEl.title = 'Wrong last name'
+    cityListEl.value = 'Kiev';
+    hobbiesEl.value = 'Drunkin stelka';
+    avatarWrapperEl.innerHTML = '<ul id=\'list\'><li>1</li><li>2</li><ul>';
+    let listId = 'list';
+    let numberList = document.getElementById(listId);
+    window.alert(numberList.innerHTML);
+
 </script>
 
 <style>
